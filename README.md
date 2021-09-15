@@ -2,7 +2,7 @@
 Add music to your personalized playlist from a curated song library.
 
 ## Usage
-Head on over to https://calm-anchorage-21481.herokuapp.com/ to demo the app
+Head on over to https://calm-anchorage-21481.herokuapp.com/ for a demo!
 
 An example display of the landing page is shown below.
 
