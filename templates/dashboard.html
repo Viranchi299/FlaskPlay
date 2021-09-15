@@ -1,0 +1,52 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="jumbotron mb-0">
+    <h1 class="display-4">Welcome to the Dashboard</h1>
+    <p class="lead">You can add additional users or songs here.</p>
+    <hr class="my-4">
+</div>
+
+
+
+<div style="padding: 32px; background-color:#acb9ca;">
+<h2>Songs:</h2>
+
+{% for song in songs %}
+    <p>{{song}}</p>
+{% endfor %}
+</div>
+
+<div style="padding: 32px;">
+<div class="formwrapper">
+  <h2 class="title">Add new songs:</h2>
+  <form action="" method="post" novalidate>
+  {{ form.hidden_tag() }}
+        <p>
+            {{ form.title.label }}<br>
+            {{ form.title(size=50) }}<br>
+
+        </p>
+        <p>
+            {{ form.artist.label }}<br>
+            {{ form.artist(size=50) }}<br>
+        </p>
+        <p>{{ form.submit_song() }}</p>
+    </form>
+</div>
+
+    <div class="formwrapper">
+        <h2 class="title">Add new users:</h2>
+        <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+            <p>
+                {{ form_user.username.label }}<br>
+                {{ form_user.username(size=50) }}<br>
+    
+            </p>
+            <p>{{ form_user.submit_user() }}</p>
+        </form>
+    </div>
+</div>
+{% endblock %}
