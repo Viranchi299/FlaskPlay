@@ -13,7 +13,7 @@ provides recommendations on relocation to the US based on the user’s preferenc
 An example display of the dashboard page is shown below.
 
 <p align="center">
-  <img width="1050" height="520" src="https://github.com/Viranchi299/cis550-project/blob/main/cis550-dashboard.jpg">
+  <img width="1050" height="520" src="https://github.com/Viranchi299/FlaskPlay/blob/main/FlaskPlayLandingPage.PNG?raw=true">
 </p>
 
 
